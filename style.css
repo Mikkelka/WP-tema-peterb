@@ -1,0 +1,1640 @@
+@charset "UTF-8";
+/*!
+Theme Name: Mit Tema
+Author: Mikkel & Simon
+Version: 1.0
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+  font-family: 'Open Sans', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  max-width: 2560px;
+}
+
+h1, h2, h3 {
+	 font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+p {
+  line-height: 2;
+}
+
+.main-streg {
+  height: 3px;
+  width: 100%;
+  background-color: #666666;
+}
+
+.main-halv-streg {
+  height: 3px;
+  width: 50%;
+  background-color: #666666;
+  margin: auto;
+}
+
+#mobile-menu-button {
+  position: fixed;
+  cursor: pointer;
+  right: 30px;
+  display: none;
+}
+
+#mobile-menu-container {
+  background-image: linear-gradient(135deg, #1e88e5 10%, #0026a1 100%);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+}
+
+#mobile-menu-container a {
+  padding: 0;
+  font-size: 1em;
+}
+
+#mobile-menu-container li {
+  margin: 5px 0px;
+}
+
+#mobile-menu-container ul {
+  padding: 0;
+}
+
+.hidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#mobile-close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  cursor: pointer;
+}
+
+.fa-times,
+.fa-bars {
+  font-size: 30px;
+  color: white;
+}
+
+#mobile-content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px;
+  margin-bottom: 120px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.35);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 75px;
+  color: #ffffff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  max-width: 2560px
+}
+
+header h1 {
+  margin: 0px 0px 0em 2em;
+  font-size: 2em;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-menu-1-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0px 4em 0px 0px;
+}
+
+.menu a {
+  color: #ffffff;
+  padding: 1em;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  font-weight: 300;
+  font-size: 1.25em;
+}
+
+.menu a:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+li.current-menu-item a {
+  text-decoration: underline;
+}
+
+footer {
+  background-image: linear-gradient(135deg, #1e88e5 10%, #0026a1 100%);
+  display: -ms-grid;
+  display: grid;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+#sub-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2em 10em;
+}
+
+#sub-footer div button {
+  background-color: transparent;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+#sub-footer div button:hover {
+  color: #dddddd;
+  border-color: #dddddd;
+}
+
+#sub-footer div a {
+  color: white;
+}
+
+#sub-footer div a:hover {
+  color: #dddddd;
+}
+
+#copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em 10em;
+  background-color: #222222;
+}
+
+/* Forside */
+#knap-first{
+	border-color: transparent;
+	background-color: white;
+}
+#knap-first:hover{
+	color: white;
+	background-color: transparent;
+	border-color: white;
+	transition: 0.5s;
+}
+#knap-last {
+	color: white;
+	background-color: transparent;
+	border-color: white;}
+
+
+#knap-last:hover{
+	color: #dddddd;
+	border-color: #dddddd;
+}
+
+#forside-intro-head {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-columns: 1fr 1.3fr;
+      grid-template-columns: 1fr 1.3fr;
+  height: 75vh;
+  overflow: hidden;
+}
+
+#forside-billede {
+  background-image: url(/wp-content/uploads/2019/05/forside.jpg);
+  background-size: cover;
+  height: 101%;
+  background-position: right;
+}
+
+#blue-forside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(30, 136, 229, 0.78);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  position: absolute;
+  height: 101%;
+  width: 50%;
+  background-image: linear-gradient(135deg, #1e88e5 10%, #0026a1 100%);
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+}
+
+#blue-forside p {
+  font-size: 1.75em;
+}
+
+#blue-forside h1 {
+  margin: 0.5em;
+}
+
+#blue-forside #nedtel {
+  height: 100px;
+}
+
+#blue-forside #countdown {
+  margin: 0;
+  font-size: 2em;
+}
+
+#blue-forside div button {
+  margin: 0em 1em;
+}
+
+#main-overskrift {
+  font-size: 4em;
+}
+
+@-webkit-keyframes pulse {
+  20% {
+    -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.578);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.32);
+  }
+}
+
+@keyframes pulse {
+  10% {
+    -webkit-box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.2);
+  }
+  30% {
+    -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.278);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.52);
+  }
+}
+
+#scroll-knap {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #1E88E5;
+  background-color: transparent;
+  position: absolute;
+  background-color: white;
+  color: #1E88E5;
+  bottom: 10px;
+  right: 48.5%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.halv-halv {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#erfaring-titel-forside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+  color: white;
+  height: 400px;
+  padding: 0em 10em;
+}
+
+#erfaring-tekst-forside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: black;
+  padding: 0em 10em;
+}
+
+#erfaring-tekst-forside button {
+  background-color: transparent;
+  border-color: #1E88E5;
+}
+
+#biler-forside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 825px;
+  background-image: url(/wp-content/uploads/2019/05/44412613_1738122766317175_5847531620554244096_o_28012fcaa03c5e5c76783683dbe4272e.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 0em 10em;
+}
+
+#biler-forside h2 {
+  font-size: 3em;
+  color: white;
+}
+
+#biler-forside button {
+  background-color: white;
+  border-color: #1E88E5;
+  color: black;
+}
+#biler-forside button:hover{
+  color: white !important;
+  border-color: transparent;
+  background-color: #1E88E5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#forløb-titel-forside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+  color: white;
+  padding: 0em 10em;
+  height: 450px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#forløb-tekst-forside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: black;
+  padding: 0em 10em;
+}
+
+#forløb-tekst-forside button {
+  background-color: transparent;
+  border-color: #1E88E5;
+}
+
+#gear-forside {
+  height: 300px;
+  background-color: #F9F9F9;
+  padding: 2em 10em 0em 10em;
+}
+
+#gear-forside a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-decoration: none;
+}
+
+#gear-forside button {
+  background-color: transparent;
+  border-color: #1E88E5;
+}
+
+#gear-forside-tekst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#elever {
+  background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+  color: white;
+  text-align: center;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+	padding-bottom: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#elever-kom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin: 0px 120px;
+  grid-gap: 1em;
+}
+
+/* Om os */
+#underside-intro-head {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 50vh;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(135deg, #1e88e5 10%, #0026a1 100%);
+}
+
+#underside-intro-head #omos-billede {
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  background-image: url(/wp-content/uploads/2019/05/60055047_2030307047098744_4860340804977164288_o.jpg);
+  background-size: cover;
+	background-position: center;
+  height: 101%;
+}
+
+#blue-undersider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+#om-os-tekst {
+  padding: 0em 10em;
+  color: white;
+  background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#om-os-billede {
+  height: 500px;
+  overflow: hidden;
+  background-image: url(/wp-content/uploads/2019/04/12805696_844658015663659_2507150178388964101_n.jpg);
+  background-size: cover;
+  background-position: bottom top;
+}
+
+#korelærer {
+  display: -ms-grid;
+  display: grid;
+  background-color: #F9F9F9;
+  padding-bottom: 4em;
+  text-align: center;
+}
+
+#lærer {
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2em;
+  width: 70%;
+}
+
+#kørelærer-template {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+#kørelærer-template h2,
+#kørelærer-template h3,
+#kørelærer-template p {
+  margin: 5px;
+}
+
+#kørelærer-template img {
+  border-radius: 50%;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.16);
+  height: 200px;
+  width: 200px;
+}
+
+#ks-lokaler-billede {
+  height: 500px;
+  overflow: hidden;
+  background-image: url(/wp-content/uploads/2019/06/61668165_398847657640524_5858185729313603584_n.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#ks-lokaler {
+  padding: 0em 10em;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Køretøjer */
+#biler-billede {
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  background-image: url(/wp-content/uploads/2019/05/11228515_738201989642596_7855157900075296336_o.jpg);
+  background-size: cover;
+  height: 101%;
+}
+
+#bilerne-tekst {
+  padding: 0em 10em;
+  color: white;
+  background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#bilerne-billede {
+  height: 500px;
+  overflow: hidden;
+  background-image: url(/wp-content/uploads/2019/04/13071941_880405925422201_2120417688876104651_o.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+#motorcyklerne-billede {
+  background-image: url(/wp-content/uploads/2019/04/12829145_845220628940731_1112720521417938421_o.jpg);
+  background-size: cover;
+  background-position: center top;
+}
+
+#motorcyklerne-tekst {
+  padding: 0em 10em;
+  color: white;
+  background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Priser */
+#priser-billeder {
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  background-image: url(/wp-content/uploads/2019/05/48218192_1813366162126168_1798197928028798976_o-1.jpg);
+  background-size: cover;
+  height: 101%;
+}
+
+#kørekort-personbil-tekst {
+  padding: 5em 10em;
+  color: white;
+  background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#pris-personbil,
+#pris-motorcykel,
+#pris-trailer,
+#generhverv-pris {
+  padding: 2em 10em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#pris-personbil h2,
+#pris-motorcykel h2,
+#pris-trailer h2,
+#generhverv-pris h2 {
+  font-size: 32px;
+  color: #1E88E5 !important;
+}
+
+#pris-personbil h2,
+#pris-personbil p,
+#pris-motorcykel h2,
+#pris-motorcykel p,
+#pris-trailer h2,
+#pris-trailer p,
+#generhverv-pris h2,
+#generhverv-pris p {
+  margin: 0;
+}
+
+#pris-personbil p,
+#pris-motorcykel p,
+#pris-trailer p,
+#generhverv-pris p {
+  line-height: 2;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#kørekort-motorcykel-tekst {
+  padding: 0em 10em;
+  color: white;
+  background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#kørekort-trailer-tekst {
+  padding: 0em 10em;
+  color: white;
+  background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#kørekort-generhverv-tekst {
+  padding: 0em 10em;
+  color: white;
+  background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.pris-streg-stor {
+  height: 3px;
+  background-color: #666666;
+  width: 60%;
+  margin: 0.5em 0em 1em 0em;
+}
+
+.pris-streg {
+  height: 3px;
+  background-color: #666666;
+  width: 60%;
+  margin: 2em 1em;
+}
+
+.pris-bestå {
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+/* FAQ */
+#faq-billede {
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  background-image: url(/wp-content/uploads/2019/04/444.jpg);
+  background-size: cover;
+  height: 101%;
+}
+
+#spørgsmål {
+  display: -ms-grid;
+  display: grid;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 4em;
+}
+
+.faq-input-header {
+  font-size: 18px;
+  background: #f1f1f1;
+  margin: 5px 0 0 0;
+  padding: 10px 20px;
+  border: 1px solid #c2c2c2;
+  cursor: pointer;
+  color: #131313;
+}
+
+.active-header {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1E88E5;
+  color: white;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+}
+
+.inactive-header {
+  background: #f1efef;
+  background-repeat: no-repeat;
+  background-position: right 50%;
+}
+/*faq-input-content*/
+.faq-input-content {
+  display: none;
+  padding: 10px 20px;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  border-top: 0;
+}
+
+/* Kontakt */
+#kontakt-billede {
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+  background-image: url(/wp-content/uploads/2019/05/12898317_861470170649110_7190870485690241709_o_cbe36bda154655e9fe54e492bdab4b2c.jpg);
+  background-size: cover;
+  height: 101%;
+}
+
+#kontakt-os-tekst {
+  padding: 0em 10em;
+  color: white;
+  background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#kontakt-form {
+	display: flex;
+	justify-content:center;
+	padding: 2em;
+}
+
+#kontakt-google-maps {
+  background-color: #121212;
+}
+
+#kontakt-find-os {
+  padding: 0em 10em;
+  color: white;
+  background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*index.php - rammer alle sider*/
+#page-not-found {
+  height: 65vh;
+  padding: 0em 10em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Standarder */
+.main-site-knap {
+  border: 2px solid #222222;
+  height: 50px;
+  min-width: 170px;
+  max-width: 200px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.linking-anchor-blue:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1E88E5;
+}
+
+.linking-anchor-blue:hover button {
+  color: white !important;
+  border: transparent;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.pris-knap {
+  border: 2px solid #222222;
+  background-color: transparent;
+  height: 50px;
+  width: 140px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.pris-knap:hover {
+  background-color: #1E88E5;
+  border-color: transparent;
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.streg {
+  width: 100%;
+  height: 2px;
+  background-color: #1E88E5;
+}
+
+/* Tilmeld  */
+#tilmeldning {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+#tilmeldning div {
+  overflow: hidden;
+}
+
+#tilmeldform {
+	display: flex;
+    flex-direction: column;
+    padding: 7em 0em;
+	align-items: center;
+	order: 1;
+}
+
+#tilmeldform h2 {
+	margin: 0;
+}
+
+#tilmeld-tekst {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+	background: -webkit-linear-gradient(360deg, #222221 10%, #2e2e2e 360%);
+	color: white;
+	padding: 0em 10em;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+select {
+  margin: 0px 0px 80px 0px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 34px;
+}
+
+select:hover {
+  background-color: #ebebeb;
+}
+
+form input {
+  border: 2px solid;
+  border-color: #d4d4d4;
+  color: #464646;
+  font-weight: 500;
+  -webkit-appearance: unset;
+     -moz-appearance: unset;
+          appearance: unset;
+  height: 30px;
+  margin-bottom: 1em;
+  padding: 5px;
+
+}
+
+form input:focus {
+  border-color: #1E88E5;
+  color: black;
+  outline: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+textarea {
+	border: 2px solid;
+	border-color: #dddddd;
+	color: #464646;
+	font-weight: 500;
+	resize: none;
+	height: 150px;
+	font-family: 'Open Sans', sans-serif;
+}
+textarea:focus{
+	border-color: #1E88E5;
+	color: black;
+	 -webkit-transition: 0.5s;
+	transition: 0.5;
+}
+
+
+#kontakt-knap, #tilmeld-knap {
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 1em;
+	
+	border: 2px solid #222222;
+    height: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+	
+	background-color: transparent;
+    border-color: #1E88E5;
+}
+
+#kontakt-knap:hover, #tilmeld-knap:hover {
+	-webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1E88E5;
+	color:white;
+}
+
+@media only screen and (max-width: 1450px) {
+  header h1 {
+    margin: 0px 0px 0em 10px;
+    font-size: 2em;
+  }
+  /* Footer */
+  #sub-footer {
+    padding: 3em 2em;
+  }
+	
+  #footer-tilmeld {
+	 padding-bottom: 2em;
+	}
+  
+  #copyright {
+    padding: 3em 2em;
+  }
+  h2 {
+    margin: 0;
+  }
+  .menu-menu-1-container ul {
+   margin: 0px 0em 0px 0px;
+}
+	
+  /* Forside */
+  #forside-intro-head {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+  }
+  
+  #blue-forside p {
+    font-size: 1.75em;
+  }
+  #blue-forside div button {
+    margin: 0em 1em;
+  }
+  #main-overskrift {
+    font-size: 3em;
+  }
+  #scroll-knap {
+    display: none;
+  }
+  #erfaring-titel-forside {
+    height: 350px;
+    padding: 1em 2em;
+  }
+  #erfaring-tekst-forside {
+    padding: 1em 2em;
+  }
+  #biler-forside {
+    height: 400px;
+    padding: 1em 2em;
+	background-position: center;
+  }
+  #forløb-titel-forside {
+    padding: 1em 2em;
+    height: auto;
+  }
+  #forløb-tekst-forside {
+    padding: 3em 2em;
+  }
+  #gear-forside {
+    height: auto;
+    padding: 3em 2em;
+  }
+  #elever {
+    height: auto;
+    padding: 3em 2em;
+  }
+  #elever-kom {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2em;
+    padding-bottom: 3em;
+  }
+  /* om os */
+  #underside-intro-head {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+  }
+  #blue-undersider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  #blue-undersider h1 {
+    font-size: 2.5em;
+  }
+  #om-os-tekst {
+    padding: 3em 2em;
+    height: auto;
+  }
+  #om-os-tekst h2 {
+    margin: 0;
+  }
+  #om-os-billede {
+    height: auto;
+  }
+  #om-os-billede img {
+    background-size: cover;
+  }
+  #lærer {
+    width: 90%;
+  }
+  #kørelærer-template img {
+    height: 200px;
+    width: 200px;
+  }
+  #ks-lokaler-billede {
+    height: 400px;
+    overflow: hidden;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #ks-lokaler {
+    padding: 3em 2em;
+    height: auto;
+  }
+  #ks-lokaler h2 {
+    margin: 0;
+  }
+  /* køretøjer */
+  #bilerne-tekst {
+    padding: 3em 2em;
+    height: auto;
+  }
+  #bilerne-tekst h2 {
+    margin: 0;
+  }
+  #bilerne-billede {
+    height: auto;
+  }
+  #motorcyklerne-tekst {
+    padding: 3em 2em;
+    height: auto;
+  }
+  #motorcyklerne-tekst h2 {
+    margin: 0;
+  }
+  /* priser */
+  #kørekort-personbil-tekst {
+    padding: 1em 2em;
+    height: auto;
+  }
+  #pris-personbil,
+  #pris-motorcykel,
+  #pris-trailer,
+  #generhverv-pris {
+    padding: 2em 0em;
+  }
+  #kørekort-motorcykel-tekst {
+    padding: 1em 2em;
+    height: auto;
+  }
+  #kørekort-trailer-tekst {
+    padding: 1em 2em;
+    height: auto;
+  }
+  #kørekort-generhverv-tekst {
+    padding: 1em 2em;
+    height: auto;
+  }
+  /* faq */
+	
+	
+  #spørgsmål {
+    width: 90%;
+	padding: 3em 2em;
+  }
+  /* Kontakt */
+  #kontakt-os-tekst {
+    padding: 1em 2em;
+    height: auto;
+  }
+  #kontakt-os-tekst h2 {
+    margin: 0;
+  }
+  #kontakt-find-os {
+    padding: 1em 2em;
+    height: auto;
+  }
+  #kontakt-find-os h2 {
+    margin: 0;
+  }
+  #kontakt-os-billede {
+    height: 400px;
+  }
+	
+	#tilmeld-tekst {
+    padding: 0em 2em;
+}
+	
+}
+
+@media screen and (max-width: 780px) {
+  header div {
+    display: none;
+  }
+  header h1 {
+    font-size: 1.25em;
+  }
+  #mobile-menu-button {
+    position: fixed;
+    cursor: pointer;
+    right: 30px;
+    display: block;
+  }
+  .halv-halv {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 3em;
+    margin: 0.5em 0em;
+  }
+  h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+  #sub-footer div {
+    margin: 1em 0em;
+  }
+  /* Forside */
+  #forside-intro-head {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    overflow: hidden;
+  }
+  #kontakt-billede, #biler-billede, #priser-billeder, #faq-billede, #omos-billede {
+    display: none;
+  }
+  #blue-forside {
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  #blue-forside p {
+    font-size: 1.75em;
+    margin: 0;
+  }
+ 
+  #blue-forside div button {
+    margin: 0em 0.5em;
+  }
+  #main-overskrift {
+    font-size: 2em;
+  }
+  .main-site-knap {
+    border: 2px solid #222222;
+    height: 40px;
+    min-width: 130px;
+    max-width: 200px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #erfaring-titel-forside {
+    height: auto;
+    padding: 2em 2em;
+  }
+  #erfaring-titel-forside h2 {
+    font-size: 2em;
+    margin: 0 0 1em 0;
+  }
+  #erfaring-tekst-forside {
+    padding: 2em 2em;
+  }
+  #biler-forside {
+    height: 50vh;
+    padding: 2em 2em;
+  }
+  #biler-forside h2 {
+    font-size: 2em;
+	padding: 1em 0em;
+  }
+  #forløb-titel-forside {
+    padding: 2em 2em;
+    height: auto;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  #forløb-titel-forside h2 {
+    font-size: 2em;
+    margin: 0 0 1em 0;
+  }
+  #forløb-tekst-forside {
+    padding: 2em 2em;
+  }
+  #gear-forside {
+    height: auto;
+    padding: 2em 2em;
+  }
+  #elever {
+    height: auto;
+    padding: 2em 2em;
+  }
+  #elever-kom {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2em;
+    margin: 0em 0em;
+  }
+  /* om os */
+  #underside-intro-head {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+  }
+  #blue-undersider {
+    height: 100%;
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  #blue-undersider h1 {
+    font-size: 2em;
+  }
+  #ks-lokaler-billede {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #ks-lokaler {
+    padding: 2em 2em;
+    height: auto;
+  }
+  /* køretøjer */
+  #bilerne-tekst {
+    padding: 2em 2em;
+    height: auto;
+  }
+  #bilerne-billede {
+    height: 400px;
+  }
+  #motorcyklerne-billede {
+    height: 400px;
+  }
+  #motorcyklerne-tekst {
+    padding: 2em 2em;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  /* priser */
+  #kørekort-personbil-tekst {
+    padding: 2em 2em;
+    height: auto;
+  }
+  #pris-personbil,
+  #pris-motorcykel,
+  #pris-trailer,
+  #generhverv-pris {
+    padding: 2em 1em;
+  }
+		
+.pris-bestå {
+  width: 75%;
+}
+  #pris-motorcykel {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #kørekort-motorcykel-tekst {
+    padding: 2em 2em;
+    height: auto;
+  }
+  #kørekort-trailer-tekst {
+    padding: 2em 2em;
+    height: auto;
+  }
+  #generhverv-pris {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #kørekort-generhverv-tekst {
+    padding: 2em 2em;
+    height: auto;
+  }
+  /* faq */
+  #spørgsmål {
+    padding: 2em 0em;
+  }
+  /* Kontakt */
+  #kontakt-os-tekst {
+    padding: 2em 2em;
+    height: auto;
+  }
+  #kontakt-find-os {
+    padding: 2em 2em;
+    height: auto;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+	
+/* tilmeld side */
+	
+#tilmeldning {
+  -ms-grid-columns: 1fr;
+   grid-template-columns: 1fr;
+}
+	
+#tilmeldform {
+    padding: 2em 0em;
+}
+	
+#tilmeld-tekst {
+	padding: 100px 2em;
+}
+
+	
+}
+/*# sourceMappingURL=style.css.map */
